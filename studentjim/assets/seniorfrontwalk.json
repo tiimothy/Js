@@ -1,0 +1,115 @@
+{
+  "frames": [
+    {
+      "filename": "senior-front(2)",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 183,
+        "h": 369
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 103,
+        "y": 4,
+        "w": 183,
+        "h": 369
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "senior-front(3)",
+      "frame": {
+        "x": 0,
+        "y": 369,
+        "w": 183,
+        "h": 369
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 103,
+        "y": 4,
+        "w": 183,
+        "h": 369
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "senior-front(4)",
+      "frame": {
+        "x": 0,
+        "y": 738,
+        "w": 183,
+        "h": 369
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 103,
+        "y": 4,
+        "w": 183,
+        "h": 369
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "senior-front(1)",
+      "frame": {
+        "x": 0,
+        "y": 1107,
+        "w": 185,
+        "h": 367
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 111,
+        "y": 4,
+        "w": 185,
+        "h": 367
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "seniorfrontwalk.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 185,
+      "h": 1474
+    },
+    "scale": 1
+  }
+}

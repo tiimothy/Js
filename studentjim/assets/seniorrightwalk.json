@@ -1,0 +1,115 @@
+{
+  "frames": [
+    {
+      "filename": "senior-right(2)",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 161,
+        "h": 368
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 127,
+        "y": 5,
+        "w": 161,
+        "h": 368
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "senior-right(1)",
+      "frame": {
+        "x": 0,
+        "y": 368,
+        "w": 144,
+        "h": 366
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 127,
+        "y": 5,
+        "w": 144,
+        "h": 366
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "senior-right(4)",
+      "frame": {
+        "x": 0,
+        "y": 734,
+        "w": 161,
+        "h": 354
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 127,
+        "y": 14,
+        "w": 161,
+        "h": 354
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "senior-right(3)",
+      "frame": {
+        "x": 144,
+        "y": 368,
+        "w": 161,
+        "h": 351
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 127,
+        "y": 14,
+        "w": 161,
+        "h": 351
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "seniorrightwalk.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 305,
+      "h": 1088
+    },
+    "scale": 1
+  }
+}

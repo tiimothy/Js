@@ -1,0 +1,90 @@
+{
+  "frames": [
+    {
+      "filename": "Jim-back(1)",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 174,
+        "h": 355
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 117,
+        "y": 10,
+        "w": 174,
+        "h": 355
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "Jim-back(2)",
+      "frame": {
+        "x": 0,
+        "y": 355,
+        "w": 174,
+        "h": 355
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 117,
+        "y": 10,
+        "w": 174,
+        "h": 355
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "Jim-back(3)",
+      "frame": {
+        "x": 0,
+        "y": 710,
+        "w": 174,
+        "h": 355
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 107,
+        "y": 10,
+        "w": 174,
+        "h": 355
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "backwalk.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 174,
+      "h": 1065
+    },
+    "scale": 1
+  }
+}
