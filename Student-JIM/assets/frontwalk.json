@@ -1,0 +1,90 @@
+{
+  "frames": [
+    {
+      "filename": "Jim-front(1).png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 171,
+        "h": 353
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 99,
+        "y": 11,
+        "w": 171,
+        "h": 353
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "Jim-front(2).png",
+      "frame": {
+        "x": 0,
+        "y": 353,
+        "w": 145,
+        "h": 352
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 115,
+        "y": 11,
+        "w": 145,
+        "h": 352
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "Jim-front(3).png",
+      "frame": {
+        "x": 0,
+        "y": 705,
+        "w": 144,
+        "h": 352
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 120,
+        "y": 11,
+        "w": 144,
+        "h": 352
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "frontwalk.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 171,
+      "h": 1057
+    },
+    "scale": 1
+  }
+}

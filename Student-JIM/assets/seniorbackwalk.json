@@ -1,0 +1,115 @@
+{
+  "frames": [
+    {
+      "filename": "senior-back(3)",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 185,
+        "h": 370
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 101,
+        "y": 3,
+        "w": 185,
+        "h": 370
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "senior-back(2)",
+      "frame": {
+        "x": 0,
+        "y": 370,
+        "w": 183,
+        "h": 369
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 103,
+        "y": 4,
+        "w": 183,
+        "h": 369
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "senior-back(4)",
+      "frame": {
+        "x": 0,
+        "y": 739,
+        "w": 183,
+        "h": 369
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 103,
+        "y": 4,
+        "w": 183,
+        "h": 369
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "senior-back(1)",
+      "frame": {
+        "x": 0,
+        "y": 1108,
+        "w": 185,
+        "h": 367
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 103,
+        "y": 4,
+        "w": 185,
+        "h": 367
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "seniorbackwalk.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 185,
+      "h": 1475
+    },
+    "scale": 1
+  }
+}

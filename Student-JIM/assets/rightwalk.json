@@ -1,0 +1,115 @@
+{
+  "frames": [
+    {
+      "filename": "Jim-right(3)",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 113,
+        "h": 362
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 130,
+        "y": 12,
+        "w": 113,
+        "h": 362
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "Jim-right(4)",
+      "frame": {
+        "x": 0,
+        "y": 362,
+        "w": 150,
+        "h": 357
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 122,
+        "y": 12,
+        "w": 150,
+        "h": 357
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "Jim-right(2)",
+      "frame": {
+        "x": 113,
+        "y": 0,
+        "w": 139,
+        "h": 356
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 126,
+        "y": 12,
+        "w": 139,
+        "h": 356
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "Jim-right(1)",
+      "frame": {
+        "x": 0,
+        "y": 719,
+        "w": 113,
+        "h": 356
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 130,
+        "y": 12,
+        "w": 113,
+        "h": 356
+      },
+      "sourceSize": {
+        "w": 378,
+        "h": 378
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "rightwalk.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 252,
+      "h": 1075
+    },
+    "scale": 1
+  }
+}
