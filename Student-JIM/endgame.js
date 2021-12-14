@@ -1,7 +1,7 @@
-class main extends Phaser.Scene {
+class endgame extends Phaser.Scene {
   constructor() {
     super({
-      key: "main",
+      key: "endgame",
     });
 
     
@@ -9,7 +9,8 @@ class main extends Phaser.Scene {
 
   preload() {
     // Preload all the assets here
-    this.load.image('mainmenu','assets/jimmainmenu.png');
+    this.load.image('endgame','assets/jimendgame.png');
+    this.load.audio('victory','assets/victorymusic.mp3')
 
     this.load.tilemapTiledJSON("world2test", "assets/world2test.json");
     
@@ -25,22 +26,28 @@ class main extends Phaser.Scene {
 
 
   create() {
-    console.log("*** main scene");
+    console.log("*** end scene");
 
-    this.add.image(0, 0, 'mainmenu').setScale(1).setOrigin(0,0);
+    this.victorymusic = this.sound.add('victory').setVolume(0.1);
+    window.music1 = this.victorymusic
+    window.music1.play();
+    window.music1.loop = true;
+    this.add.image(0, 0, 'endgame').setScale(1).setOrigin(0,0);
     
 
-    
+  
+
+    // Check for spacebar or any key here
     var spaceDown = this.input.keyboard.addKey("SPACE");
 
     // On spacebar event, call the world scene
     spaceDown.on(
       "down",
       function () {
-        console.log("Jump to story scene");
-
+        console.log("Jump to credits scene");
+        window.music1.stop()
         this.scene.start(
-          "story",
+          "credits",
           // Optional parameters
           {}
         );
@@ -48,7 +55,7 @@ class main extends Phaser.Scene {
       this
     );
 
-    
+   
 
     // Create all the game animations here
   }

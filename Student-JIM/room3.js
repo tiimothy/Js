@@ -2,6 +2,7 @@ class room3 extends Phaser.Scene {
 
     constructor() {
         super({ key: 'room3' });
+        this.score = 0;
         
         // Put global variable here
     }
@@ -26,11 +27,23 @@ class room3 extends Phaser.Scene {
         this.load.atlas('seniorright', 'assets/seniorrightwalk.png','assets/seniorrightwalk.json');
         this.load.atlas('seniorleft', 'assets/seniorleftwalk.png','assets/seniorleftwalk.json');
         this.load.atlas('seniorback', 'assets/seniorbackwalk.png','assets/seniorbackwalk.json');
+
+        this.load.audio('room','assets/roomsmusic.mp3');
+        this.load.audio('collect','assets/collectsound.mp3')
     }
 
     create() {
         console.log('*** room3 scene');
         let map = this.make.tilemap({key:"room3"});
+
+        this.backgroundmusic = this.sound.add('room').setVolume(0.3);
+        this.collectsound = this.sound.add('collect').setVolume(0.5);
+
+    window.music1 = this.backgroundmusic
+    window.music1.play();
+    window.music1.loop = true;
+
+    window.sound2 = this.collectsound
 
         // Step 4 Load the game tiles
         // 1st parameter is name in Tiled,
@@ -155,10 +168,7 @@ class room3 extends Phaser.Scene {
          //enable debug
     window.player = this.player;
 
-    // get the tileIndex number in json, +1
-     //mapLayer.setTileIndexCallback(11, this.room1, this);
-
-     // Add custom properties in Tiled called "mouintain" as bool
+   
      this.player.setCollideWorldBounds(false);
      this.collect.setTileIndexCallback(198, this.removeItem, this);
      this.objects. setCollisionByProperty ({wall: true})
@@ -172,6 +182,16 @@ class room3 extends Phaser.Scene {
 
      this.physics.add.overlap(this.player, this.seniorupdown, this.overlapsen, null, this );
      this.physics.add.overlap(this.player, this.seniordownup, this.overlapsen, null, this );
+
+     
+     this.paperText = this.add.text(660, 20, this.score, {
+      fontSize: '50px',
+      fill: '#FFFFFF'
+      });
+
+      
+      this.paperText.setScrollFactor(0);
+      this.paperText.visible = true;
 
     // create the arrow keys
      this.cursors = this.input.keyboard.createCursorKeys();
@@ -258,15 +278,28 @@ class room3 extends Phaser.Scene {
             this.player.anims.stop();
             this.player.body.setVelocity(0,0);
           }
+          if (this.score== 10 ) {
+            console.log('levelcomplete');   
+            window.music1.stop();
+            this.time.delayedCall(1000,function() {
+              this.scene.start("endgame");
+             },[], this);      
+             //this.scene.start("world");
+           
+            }
     }
     removeItem(player, tile) {
       console.log("remove item", tile.index);
+      window.sound2.play();
+      this.score = this.score + 1;
+      this.paperText.setText(this.score);
       this.collect.removeTileAt(tile.x, tile.y); // remove the item
      return false;
      }
      overlapsen(){
-       this.scene.start("world")
+      window.music1.stop();
+       this.score = 0
+       this.scene.start("gameover3")
      }
-    
 
 }

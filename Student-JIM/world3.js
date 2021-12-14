@@ -1,43 +1,42 @@
-class world extends Phaser.Scene {
+class world3 extends Phaser.Scene {
   constructor() {
     super({
-      key: "world",
+      key: "world3",
       
     });
+    this.score = 0
   }
 
   // incoming data from scene below
   init(data) {}
 
   preload() {
-    
+    // Step 1, load JSON
    this.load.tilemapTiledJSON("world","assets/world2test.json");
 
-    
+    // Step 2 : Preload any images here, nickname, filename
     this.load.image("world","assets/tilestbw.png")
     this.load.atlas('jimfront', 'assets/frontwalk.png','assets/frontwalk.json');
     this.load.atlas('jimright', 'assets/rightwalk.png','assets/rightwalk.json');
     this.load.atlas('jimleft', 'assets/leftwalk.png','assets/leftwalk.json');
     this.load.atlas('jimback', 'assets/backwalk.png','assets/backwalk.json');
-
     this.load.audio('background','assets/saiba31.mp3');
   }
 
   create() {
-    console.log("*** world scene");
+    console.log("*** world3 scene");
 
-   
+    
     let map = this.make.tilemap({key:"world"});
 
-  
     this.backgroundmusic = this.sound.add('background').setVolume(0.3);
 
     window.music1 = this.backgroundmusic
     window.music1.play();
     window.music1.loop = true;
-   
+    
     let world = map.addTilesetImage("tilestbw", "world");
-   
+  
     this.floor = map.createLayer("floor", [world], 0, 0);
     this.wall = map.createLayer("wall", [world], 0, 0);
     this.access = map.createLayer("access", [world], 0, 0);
@@ -100,36 +99,35 @@ frames: [
   window.player = this.player;
 
    
-
-    
     this.player.setCollideWorldBounds(false);
     this.access.setCollisionByProperty({wall: true})
     this.wall.setCollisionByProperty({wall: true})
-   
+    
     this.physics.add.collider(this.wall, this.player);
     this.physics.add.collider(this.access, this.player);
 
+    // create the arrow keys
     this.cursors = this.input.keyboard.createCursorKeys();
 
-   
+    // camera follow player
     this.cameras.main.startFollow(this.player);
 
 
     
-  }
+  } /////////////////// end of create //////////////////////////////
 
   update() {
 
     
-    if (this.player.x > 23 && this.player.x < 32 && this.player.y > 473 && this.player.y < 503 ) {
-    this.room1()
-    };
-  //  if (this.player.x > 743 && this.player.x < 777 && this.player.y > 411 && this.player.y < 420 ) {
-     // this.room2()
-      //};
-    //if (this.player.x > 343 && this.player.x < 377 && this.player.y > 27 && this.player.y < 37 ) {
-       // this.room3()
-       // };
+    //if (this.player.x > 23 && this.player.x < 32 && this.player.y > 473 && this.player.y < 503 ) {
+    //this.room1()
+    //};
+    //if (this.player.x > 743 && this.player.x < 777 && this.player.y > 411 && this.player.y < 420 ) {
+      //this.room2()
+     // };
+    if (this.player.x > 343 && this.player.x < 377 && this.player.y > 27 && this.player.y < 37 ) {
+        this.room3()
+        };
 
     if (this.cursors.left.isDown){
       this.player.body.setVelocityX(-200);
@@ -175,4 +173,4 @@ frames: [
     window.music1.stop();
   }
   
-} 
+} //////////// end of class world ////////////////////////
